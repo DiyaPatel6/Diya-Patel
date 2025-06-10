@@ -4,19 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Diya Patel</title>
-  <link rel="stylesheet" href="css/webpage.css">
+  <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="css/about-section.css">
 </head>
 <body>
   <div id="main-page">
     <div id="option-bar">
-      <button class="option-button"><h3 class="option-text">Home</h3></button>
-      <button class="option-button"><h3 class="option-text">About</h3></button>
-      <button class="option-button"><h3 class="option-text">Experience</h3></button>
-      <button class="option-button"><h3 class="option-text">Achievements</h3></button>
-      <button class="option-button"><h3 class="option-text">Skills</h3></button>
-      <button class="option-button"><h3 class="option-text">Projects</h3></button>
-      <button class="option-button"><h3 class="option-text">Contact</h3></button>
+      <a href="#about-section"><button class="option-button"><h3 class="option-text">About</h3></button></a>
+      <a href="#experience-section"><button class="option-button"><h3 class="option-text">Experience</h3></button></a>
+      <a href="#achievements-section"><button class="option-button"><h3 class="option-text">Achievements</h3></button></a>
+      <a href="#skills-section"><button class="option-button"><h3 class="option-text">Skills</h3></button></a>
+      <a href="#projects-section"><button class="option-button"><h3 class="option-text">Projects</h3></button></a>
+      <a href="#contact-section"><button class="option-button"><h3 class="option-text">Contact</h3></button></a>
     </div>
     <img src="images/main_background.jpeg">
     <img src="images/highlight.webp">
@@ -24,7 +23,21 @@
       <h1>Diya Patel</h1>
       <h2>Software Developer</h2>
     </div>
-    
+
+    <button class="resume-button"><h3>Download Resume</h3></button>
+
+
+    <div id="icon-container">
+      <a href="https://github.com/DiyaPatel6" target="_blank" rel="noopener noreferrer">
+        <img src="images/github-icon.png" class="icon">
+      </a>
+      <a href="https://www.linkedin.com/in/diyapatel6/" target="_blank" rel="noopener noreferrer">
+        <img src="images/linkedin-icon.png" class="icon">
+      </a>
+    </div>      
+
+
+
   </div>
   <div id="about-section">
     <h2 class="section-headers">About Me</h2>
@@ -48,14 +61,18 @@
       <div class="experience-right">
         <div class="latest-experience">
         <h3 class="organization">ChainPatrol</h3>
-        <p class="description">Identified, reported, and took down digital phishing and impersonation threats for client organizations through cross-platform monitoring.</p>
+        <p class="description">I focus on cross-platform monitoring to identify digital phishing and impersonation threats targeting our Web3 company clients. I have worked on specalized projects threat monitoring projects for MetaMask and Phantom Wallet, using honeypotting techniques to engage scammers and gather actionable intelligence. I evaluate scam reports submitted by reporters, determine appropriate action paths, and support the takedown of malicious content through platform-specific requests.<br> <br>
+          I also regularly shadow the Software Engineer team, participating in technical info sessions and contributing to side-projects under their mentorship including a Malicious URL Detector.</p>
+
+
+
         </div>
       </div>
     </div>
 
     <div class="experience-item">
       <div class="experience-left">
-        <h3 class="role">Specialist Reviewer for Computer Science, Math & Statistics</h3>
+        <h3 class="role">Computer Science, Math & Statistics Specialist Reviewer</h3>
         <p class="duration">July 2024 - Present</p>
       </div>
       <div class="location-column">
@@ -65,7 +82,7 @@
       <div class="experience-right">
         <div class="inner-box">
         <h3 class="organization">Spectrum Interdisciplinary Research - University of Alberta</h3>
-        <p class="description">Assessing the technical quality of research paper submissions by reviewing the validity of the content.<br><br>Generating reports consisting of remarks and feedback to determine which submissions are acceptable for publication.
+        <p class="description">Assessing the technical quality of research paper submissions by reviewing the validity of the content and generating reports consisting of remarks and feedback to determine which submissions are acceptable for publication.
           </p>
         </div>
       </div>
@@ -83,7 +100,7 @@
       <div class="experience-right">
         <div class="inner-box">
         <h3 class="organization">STEM Tutorz</h3>
-        <p class="description">Providing one-on-one tutoring to students in grades K-12 for coding, mathematics and physics in-person and virtually.<br/><br/>Responding to inquiries about our tutoring services and allocating customers tutors specific to their inquired subject. 
+        <p class="description">Providing one-on-one tutoring to students in grades K-12 for coding, mathematics and physics in-person and virtually, as well as responding to inquiries about our tutoring services and allocating tutors with customers specific to their inquired subject. 
           </p>
         </div>
       </div>
@@ -101,7 +118,7 @@
       <div class="experience-right">
         <div class="inner-box">
         <h3 class="organization">World Innovation League's Diverse Tech Talent Program</h3>
-        <p class="description">Selected as 1 of 200 scholarship recipients from over 2000 applicants to take part in the DTTP Web Development Program to learn and apply web development skills using HTML, CSS, and JavaScript.<br><br>Worked towards a capstone project with a team of 5 to help a non-profit with their web development needs. 
+        <p class="description">Selected as 1 of 200 scholarship recipients from over 2000 applicants, I took part in the DTTP Web Development Program to learn and apply web development skills using HTML, CSS, and JavaScript. I also worked towards a capstone project with a team of 5 to help a non-profit with their web development needs. 
           </p>
         </div>
       </div>
@@ -112,19 +129,10 @@
     <h2 class="section-headers">Achievements</h2>
     <div class="achievement-item">
       <h3 class="achievement">First Place Winner</h3>
-      <h3 class="event">World University Service of Canada (WUSC) Tech Case Competition - <i>March 2025</i></h3>
-        <ul class="details">
-          <li>Collaborated in a team of 3 to develop an AI-driven simulation platform helping newcomers improve English skills and integrate into Canadian society</li>
-          <li>Awarded top prize for innovation, feasibility and social impact among 15 teams</li>
-        </ul>
-    </div>
-
-    <div class="achievement-item">
-      <h3 class="achievement">First Place Winner</h3>
       <h3 class="event">World University Service of Canada (WUSC) Case Competition</h3>
         <ul class="details">
-          <li>Collaborated in a team of 3 to develop an AI-driven simulation platform helping newcomers improve English skills and integrate into Canadian society</li>
-          <li>Awarded top prize for innovation, feasibility and social impact among 15 team</li>
+          <li>Collaborated in a team of 3 to develop an AI-driven simulation platform helping newcomers practice and improve their English skills and integrate into Canadian society</li>
+          <li>My team was awarded first place for technological innovation, feasibility and social impact among 15 teams.</li>
         </ul>
     </div>
   </div>
@@ -151,7 +159,7 @@
     </div>
   </div>
 
-  <div class="projects-section">
+  <div id="projects-section">
     <h2 class="section-headers">Projects</h2>
     <div class="projects">
       <div class="project-item">
@@ -189,14 +197,15 @@
 
 <div id="contact-section">
   <h2 class="section-headers">Contact Me</h2>
-  <form> 
+  <form action="https://formspree.io/f/xwpblnpj" method="POST"> 
     <div id="textboxes">
-      <input class="textbox" type="text" placeholder="Your Name"><br>
-      <input class="textbox" type="email" placeholder="Your Email"><br>
-      <textarea class="textbox2" type="text" placeholder="Your Message"></textarea><br>
+      <input name="name" class="textbox" type="text" placeholder="Your Name"><br>
+      <input name="email" class="textbox" type="email" placeholder="Your Email"><br>
+      <textarea name="message" class="textbox2" placeholder="Your Message"></textarea><br>
       <input class="submit-button" type="submit" value="Send">
     </div>
   </form>
 </div>
 </body>
 </html>
+
