@@ -89,7 +89,7 @@ body, html {
   width: auto;
   position: absolute;
   display: flex;
-  bottom: 5%;
+  bottom: 0%;
   gap: 20px;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -107,7 +107,7 @@ body, html {
   padding-left: 10px;
   padding-right: 10px;
   position: absolute;
-  bottom: 14%;
+  bottom: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   object-position: center; 
@@ -117,6 +117,7 @@ body, html {
   background-color: rgba(0, 0, 0, 0);
   border-radius: 30px;
   border: solid white 3px;
+  color: white;
 }
 
 .resume-button:hover{
@@ -133,8 +134,9 @@ body, html {
 #about-section{
   background-color: rgb(232, 232, 232);
   width: 100vw;
-  height: 400px;
+  height: auto;
   padding: 1px;
+  padding-bottom: 50px;
   box-sizing: border-box;
 }
 
@@ -284,7 +286,7 @@ body, html {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 55px;
 }
 
 .achievement-item{
@@ -312,13 +314,12 @@ body, html {
 .event{
   font-size: 20px;
   margin-bottom: 25px;
-  line-height: 1px;
 }
 
 .details{
   font-size: 15px;
   margin-top: 0px;
-  max-width: 600px;
+  max-width: 700px;
 }
 /* -------------------Skills---------------------------- */
 
@@ -395,9 +396,9 @@ body, html {
 
 .overlay-text {
   color: black;
-  font-size: 20px;
+  font-size: 14.8px;
   text-align: center;
-  padding: 20px;
+  padding: 8px;
 }
 
 .projects-section {
@@ -427,6 +428,8 @@ body, html {
   align-items: center;
   margin: 0 20px; 
 }
+
+
 /* -------------------Contact---------------------------- */
 
 #contact-section{
@@ -479,6 +482,29 @@ body, html {
   background-color: rgb(7, 83, 189);
   color: rgb(211, 232, 245);
 }
+/* -------------------END-SECTION---------------------------- */
+#end-section {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  justify-content: center; 
+  text-align: center;
+  gap: 10px; 
+}
+
+.icon {
+  width: 100px;  
+  height: 100px;
+  cursor: pointer;
+}
+
+#end-section p {
+  font-size: 15px;
+  color: rgb(84, 83, 83);
+  margin: 0;
+}
+
 /* -------------------GENERAL---------------------------- */
 
 .section-headers{
@@ -489,12 +515,201 @@ body, html {
 
 .text{
   color: black;
-  font-size: 20px;
-  max-width: 500px;
+  font-size: 19px;
+  max-width: 550px;
   text-align: left;
+  gap: 10px;
 }
-
 
 html {
   scroll-behavior: smooth;
+}
+
+/* -------------------ADJUSTMENTS---------------------------- */
+
+@media (max-width: 768px) {
+  #lead-text h1 {
+    font-size: 60px;
+    line-height: 1.1; 
+  }
+  
+  #lead-text h2 {
+    font-size: 24px;
+  }
+
+  #main-page img + img {
+    height: 350px;
+  }
+  
+  #option-bar {
+    width: 90%; 
+    top: 5%; 
+  }
+  
+  .option-button {
+    width: auto; 
+    padding: 0 10px;
+  }
+
+  #contact-section {
+    padding: 20px 10px; 
+  }
+  
+  .textbox, 
+  .textbox2,
+  .submit-button {
+    width: 90%; 
+    max-width: 350px; 
+  }
+  
+  .textbox2 {
+    padding-bottom: 150px; 
+  }
+  
+  .submit-button {
+    width: 92%; 
+    font-size: 18px; 
+  }
+  
+  .section-headers {
+    font-size: 30px; 
+  }
+
+  #achievements-section {
+    padding: 20px 10px; 
+  }
+
+  .achievement-item {
+    max-width: 95%; 
+    padding: 15px; 
+  }
+
+  .achievement {
+    font-size: 22px; 
+    line-height: 1.2;
+  }
+
+  .event {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .details {
+    font-size: 14px; 
+    padding: 0 10px; 
+  }
+
+  .details li {
+    margin-bottom: 8px;
+  }
+
+  #experience-section {
+    padding: 20px 15px; 
+  }
+
+  .experience-item {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    margin-bottom: 25px;
+    position: relative; 
+  }
+
+  .experience-item:not(:last-child)::after {
+    content: "";
+    display: block;
+    width: 80%; 
+    height: 2px;
+    background: rgba(7, 83, 189, 0.3); 
+    margin: 20px auto; 
+  }
+
+  .experience-left, 
+  .experience-right {
+    text-align: center;
+    margin-left: 0;
+    align-items: center;
+  }
+
+  .location-column {
+    display: none;
+  }
+
+  .role,
+  .latest-role {
+    margin-top: 15px;
+    font-size: 20px;
+  }
+
+  .duration {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #555; 
+  }
+
+  .organization {
+    font-size: 20px;
+    color: rgb(7, 83, 189); 
+  }
+
+  .description {
+    font-size: 14px;
+    text-align: left;
+    padding: 0 10px; 
+  }
+
+  .inner-box,
+  .latest-experience {
+    max-width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    background-color: rgba(211, 232, 245, 0.7); 
+  }
+
+  #about-section {
+    height: auto; 
+    padding: 40px 20px; 
+  }
+
+  .about-content {
+    flex-direction: column; 
+    gap: 30px;
+    padding: 0 15px; 
+  }
+
+  .headshot {
+    width: 200px; 
+    height: 200px;
+  }
+
+  .text {
+    text-align: center; 
+    max-width: 100%; 
+    font-size: 16px; 
+    padding: 0 10px; 
+  }
+
+  #option-bar {
+    top: 5%;
+    width: 90%; 
+  }
+  
+  .option-button {
+    padding: 5px 6px;
+  }
+  
+  .option-text {
+    font-size: 12px;
+  }
+  .resume-button {
+    padding: 6px 12px;
+    font-size: 14px;
+    border-width: 2px;
+    bottom: 12%; 
+  }
+
+  .icon {
+    width: 80px;
+    height: 80px;
+    bottom: 4%;
+  }
 }
