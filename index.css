@@ -89,7 +89,7 @@ body, html {
   width: auto;
   position: absolute;
   display: flex;
-  bottom: 0%;
+  bottom: 8%;
   gap: 20px;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -100,34 +100,6 @@ body, html {
 .icon:hover {
   transform: scale(1.1);
 }
-
-.resume-button{
-  height: auto;
-  width: auto;
-  padding-left: 10px;
-  padding-right: 10px;
-  position: absolute;
-  bottom: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  object-position: center; 
-  text-align: center;
-  z-index: 4;
-  font-size: 15px;
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 30px;
-  border: solid white 3px;
-  color: white;
-}
-
-.resume-button:hover{
-  background-color: white;
-  color: rgb(7, 83, 189);
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-
 
 /* -------------------ABOUT---------------------------- */
 
